@@ -64,3 +64,41 @@ export const servicioPost = async ( req = request, res = response ) => {
     return res.status(201).json( servicio );
 
 }
+
+export const servicioPut = async (req = request, res = response) => {
+
+    // Obtenemos el ID del servicio
+    const { id } = req.params;
+
+    // Obtenemos los datos del servicio
+    const { nombre, imagen } = req.body;
+
+    // Actualizamos el servicio
+    const servicio = await Servicio.findByIdAndUpdate( id, { nombre, imagen });
+
+    // Devolvemos el servicio conforme se ha creado
+    res.status(201).json({ mensaje: 'Actualizado correctamente', data: servicio });
+
+}
+
+export const servicioDelete = async (req = request, res = response) => {
+
+    // Obtenemos el ID del servicio
+    const { id } = req.params;
+
+    try {
+
+        // Eliminamos el servicio
+        const servicio = await Servicio.deleteOne({ _id: id });
+
+        // Devolvemos el resultado
+        res.status(200).json({ mensaje: 'Eliminado correctamente', data: servicio });
+
+    } catch (error) {
+
+        // Si ha habido algún error, devolvemos error 500
+        res.status(500).json( error );
+
+    }
+
+}
