@@ -1,15 +1,21 @@
 import { Router } from 'express';
 import { check } from 'express-validator';
-import { login } from '../controllers/auth.js';
 import { validarCampos } from '../middlewares/validarCampos.js';
-import { servicioPost } from '../controllers/servicio.js';
+import { servicioGet, servicioIDGet, servicioPost } from '../controllers/servicio.js';
+import { validarJWT } from '../middlewares/validarJWT.js';
+
 
 // Preparamos el enrutador
 const router = Router();
 
-// Ruta principal: /api/auth
+// Ruta principal: /api/servicio
+
+router.get('/', [validarJWT], servicioGet);
+
+router.get('/:id', [validarJWT], servicioIDGet);
 
 router.post('/', [
+    validarJWT,
     check('nombre', 'El nombre del servicio es obligatorio').notEmpty(),
     check('imagen', 'La imagen del servicio es obligatoria').notEmpty(),
     validarCampos
