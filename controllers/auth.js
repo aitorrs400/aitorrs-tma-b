@@ -1,77 +1,57 @@
-const { request, response } = require('express');
-const bcrypt = require('bcryptjs');
-const { Usuario } = require('../models');
-const { generarJWT, googleVerify } = require('../helpers');
+import { response, request } from 'express';
+import bcryptjs from 'bcryptjs';
+import Usuario from '../models/Usuario.js';
+import { generarJWT } from '../helpers/generarJWT.js';
 
 // Controlador para iniciar sesión
-const login = async ( req = request, res = response ) => {
+export const login = async ( req = request, res = response ) => {
 
     // Obtenemos los datos de la petición
-    const { email, password } = req.body;
+    const { correo, contrasena } = req.body;
 
     try {
 
         // Verificar si el email existe
-        const user = await Usuario.findOne({ email });
+        const usuario = await Usuario.findOne({ correo });   
+        if( !usuario ) {
         
-        if( !user ) {
-        
-            return res.status(400).json({
-                errors: [
-                    {
-                        type: 'filed',
-                        value: '',
-                        msg: 'No existe un usuario con ese correo',
-                        path: 'email',
-                        location: 'body'
-                    }
-                ]
-            });
+            return res.status(400).json({ errors: [
+                {
+                    msg: 'Usuario y/o contraseña incorrectos'
+                }
+            ]});
 
         }
 
         // Verificar si el usuario está activo todavía
-        if( user.state == false ) {
+        if( !usuario.estado ) {
         
-            return res.status(400).json({
-                errors: [
-                    {
-                        type: 'filed',
-                        value: '',
-                        msg: 'No existe un usuario con ese correo',
-                        path: 'email',
-                        location: 'body'
-                    }
-                ]
-            });
+            return res.status(400).json({ errors: [
+                {
+                    msg: 'Usuario y/o contraseña incorrectos'
+                }
+            ]});
 
         }
         
-        // Verificar la contraseña
-        const validPassword = bcrypt.compareSync( password, user.password );
-        if( !validPassword ) {
+        // Verificamos la contraseña
+        const validPassword = bcryptjs.compareSync( contrasena, usuario.contrasena );
+        if ( !validPassword ) {
 
-            return res.status(400).json({
-                errors: [
-                    {
-                        type: 'filed',
-                        value: '',
-                        msg: 'La contraseña es incorrecta',
-                        path: 'password',
-                        location: 'body'
-                    }
-                ]
-            });
-        
+            return res.status(400).json({ errors: [
+                {
+                    msg: 'Usuario y/o contraseña incorrectos'
+                }
+            ]});
+
         }
 
-        // Generar JWT
-        const token = await generarJWT( user.id );
+        // Generamos el JWT
+        const token = await generarJWT( usuario.id );
 
-        // Si todo ha ido bien, 
-        res.json({
-            msg: 'Login OK',
-            user,
+        // Devolvemos una respuesta
+        return res.status(200).json({
+            usuario,
             token
         });
 
@@ -92,65 +72,4 @@ const login = async ( req = request, res = response ) => {
 
     }
 
-}
-
-const googleSignIn = async ( req = request, res = response ) => {
-
-    const { id_token } = req.body;
-
-    try {
-
-        const { name, picture, email } = await googleVerify( id_token );
-
-        // Revisamos si existe el usuario en la BD
-        let usuario = await Usuario.findOne({ email });
-        if( !usuario ) {
-
-            const data = {
-                name,
-                email,
-                password: 'xD',
-                img: picture,
-                role: 'USER_ROLE',
-                state: true,
-                google: true
-            };
-
-            usuario = new Usuario( data );
-            await usuario.save();
-
-        }
-
-        // Si el usuario en BD está eliminado
-        if( !usuario.state ) {
-        
-            return res.status(401).json({
-                msg: 'Esta cuenta está deshabilitada. Habla con el administrador'
-            });
-
-        }
-
-        // Generar el JWT
-        const token = await generarJWT( usuario.id );
-        
-        res.json({
-            msg: 'Todo OK',
-            usuario,
-            token
-        });
-
-    } catch (error) {
-
-        console.log( error );
-        res.status(400).json({
-            msg: 'El token no se ha podido verificar'
-        });
-
-    }
-
-}
-
-module.exports = {
-    login,
-    googleSignIn
 }

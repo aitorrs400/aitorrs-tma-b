@@ -1,9 +1,10 @@
-const { request, response } = require('express');
-const jwt = require('jsonwebtoken');
+import { request, response } from 'express';
+import jwt from 'jsonwebtoken';
 const Usuario = require('../models/Usuario');
 
-const validarJWT = async ( req = request, res = response, next ) => {
+export const validarJWT = async ( req = request, res = response, next ) => {
 
+    // Obtenemos el token de la cabecera
     const token = req.header('x-token');
 
     // Validamos si se recibe un token en la petición
@@ -15,9 +16,10 @@ const validarJWT = async ( req = request, res = response, next ) => {
 
     }
 
+    // Validamos que el JWT sea correcto
     try {
 
-        const { uid } = jwt.verify( token, process.env.SECRETORPRIVATEKEY );
+        const { uid } = jwt.verify( token, process.env.JWT_KEY );
 
         // Leemos el usuario que corresponde con el uid
         const usuario = await Usuario.findById( uid );
@@ -41,20 +43,16 @@ const validarJWT = async ( req = request, res = response, next ) => {
         }
 
         req.usuario = usuario;
-        
+        req.uid = uid;
         next();
 
     } catch (error) {
 
         console.log(error);
-        res.status(401).json({
-            msg: 'Token no válido'
-        });
+        return res.status(401).json({ errors: [
+            { msg: 'Token no válido' }
+        ]});
 
     }
 
-}
-
-module.exports = {
-    validarJWT
 }

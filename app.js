@@ -1,9 +1,11 @@
-require('dotenv').config(); // Cargamos las variables de entorno
+import dotenv from 'dotenv';
+import Server from './models/Server.js';
 
-const Server = require('./models/Server');
+// Configuración de las variables de entorno
+dotenv.config();
 
-// Instanciamos el servidor
+// Inicialización del servidor
 const server = new Server();
 
 // Arrancamos el servidor
-server.start();
+server.listen();

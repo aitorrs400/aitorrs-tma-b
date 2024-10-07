@@ -1,7 +1,7 @@
-const { Router } = require('express');
-const { check } = require('express-validator');
-const { login, googleSignIn } = require('../controllers/auth');
-const { validarCampos } = require('../middlewares/validarCampos');
+import { Router } from 'express';
+import { check } from 'express-validator';
+import { login } from '../controllers/auth.js';
+import { validarCampos } from '../middlewares/validarCampos.js';
 
 // Preparamos el enrutador
 const router = Router();
@@ -9,14 +9,10 @@ const router = Router();
 // Ruta principal: /api/auth
 
 router.post('/login', [
-    check('email', 'El correo es obligatorio').isEmail(),
-    check('password', 'La contraseña es obligatoria').not().isEmpty(),
+    check('correo', 'El correo es obligatorio').notEmpty(),
+    check('correo', 'El correo no tiene un formato válido').isEmail(),
+    check('contrasena', 'La contraseña es obligatoria').notEmpty(),
     validarCampos
 ], login );
 
-router.post('/google', [
-    check('id_token', 'El token de Google es obligatorio').not().isEmpty(),
-    validarCampos
-], googleSignIn );
-
-module.exports = router;
+export default router;

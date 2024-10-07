@@ -1,7 +1,9 @@
-const express = require('express');
-const cors = require('cors');
-const fileUpload = require('express-fileupload');
-const { dbConnection } = require('../database/config');
+import express from 'express';
+import cors from 'cors';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+import { dbConnection } from '../database/config.js';
+import { authRoutes } from '../routes/index.js';
 
 class Server {
     
@@ -10,16 +12,7 @@ class Server {
         // Inicialización del servidor
         this.app = express();
         this.port = process.env.PORT;
-
-        // Rutas del servidor API
-        this.paths = {
-            auth:       '/api/auth',
-            buscar:     '/api/buscar',
-            categorias: '/api/categorias',
-            uploads:    '/api/uploads',
-            usuarios:   '/api/usuarios',
-            productos:  '/api/productos'
-        }
+        this.authPath = '/api/auth';
 
         // Conexión a la base de datos
         this.conexionDB();
@@ -45,37 +38,40 @@ class Server {
         // Lectura y parseo del body de las peticiones
         this.app.use( express.json() );
 
-        // Carga del directorio público
-        this.app.use( express.static('public') );
-
-        // Subida de archivos al servidor
-        this.app.use( fileUpload({
-            useTempFiles: true,
-            tempFileDir: '/tmp/',
-            createParentPath: true
-        }));
-
     }
 
     // Declaración de rutas
     routes() {
     
-        this.app.use(this.paths.auth, require('../routes/auth'));
-        this.app.use(this.paths.buscar, require('../routes/buscar'));
-        this.app.use(this.paths.categorias, require('../routes/categorias'));
-        this.app.use(this.paths.uploads, require('../routes/uploads'));
-        this.app.use(this.paths.usuarios, require('../routes/user'));
-        this.app.use(this.paths.productos, require('../routes/productos'));
+        this.app.use(this.authPath, authRoutes);
+
+        // Preparamos variables para el directorio
+        const __filename = fileURLToPath(import.meta.url);
+        const __dirname = dirname(__filename);
+
+        // Obtener el directorio padre del directorio actual
+        const parentDir = join(__dirname, '..');
+
+        // Servimos la aplicación de React
+        this.app.use( express.static(parentDir + '/public') );
+
+        // Configuramos ruta para el Front-End
+        this.app.get('*', (req, res) => {
+            res.sendFile( parentDir + '/public/index.html');
+        });
 
     }
 
     // Arranque del servidor
-    start() {
+    listen() {
+
+        // Empezamos a escuchar
         this.app.listen( this.port, () => {
             console.log('Servidor iniciado en el puerto', this.port );
         });
+
     }
 
 }
 
-module.exports = Server;
+export default Server;

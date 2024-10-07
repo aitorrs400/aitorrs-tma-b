@@ -1,19 +1,19 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
-const dbConnection = async () => {
+export const dbConnection = async () => {
 
     try {
     
-        await mongoose.connect( process.env.MONGODB_CNN );
-        console.log('Conectado a la base de datos');
+        mongoose.set('strictQuery', false);
+        await mongoose.connect( process.env.MONGODB_CNN, { dbName: 'aitorrs-tma' } );
+        
+        console.log('Conexión a la base de datos realizada con éxito');
 
     } catch( error ) {
+
         console.error( error );
         throw new Error('Error al intentar conectar a la base de datos');
+        
     }
 
 }
-
-module.exports = {
-    dbConnection
-};
