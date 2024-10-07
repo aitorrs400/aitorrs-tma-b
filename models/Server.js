@@ -3,7 +3,7 @@ import cors from 'cors';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { dbConnection } from '../database/config.js';
-import { authRoutes } from '../routes/index.js';
+import { authRoutes, servicioRoutes } from '../routes/index.js';
 
 class Server {
     
@@ -13,6 +13,7 @@ class Server {
         this.app = express();
         this.port = process.env.PORT;
         this.authPath = '/api/auth';
+        this.servicioPath = '/api/servicio';
 
         // Conexión a la base de datos
         this.conexionDB();
@@ -44,6 +45,7 @@ class Server {
     routes() {
     
         this.app.use(this.authPath, authRoutes);
+        this.app.use(this.servicioPath, servicioRoutes);
 
         // Preparamos variables para el directorio
         const __filename = fileURLToPath(import.meta.url);
