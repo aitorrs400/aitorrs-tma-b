@@ -8,7 +8,7 @@ const ServicioSchema = Schema({
     },
     imagen: {
         type: String,
-        required: [true, 'La imagen del servicio es obligatoria (iagen en base64)']
+        required: [true, 'La imagen del servicio es obligatoria (imagen en base64)']
     }
 });
 
