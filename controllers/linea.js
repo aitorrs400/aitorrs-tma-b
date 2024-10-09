@@ -49,13 +49,14 @@ export const lineaIDGet = async (req = request, res = response) => {
 export const lineaPost = async ( req = request, res = response ) => {
 
     // Obtenemos los datos de la linea
-    const { nombre, label, color, servicio } = req.body;
+    const { nombre, label, colorFondo, colorTexto, servicio } = req.body;
 
     // Creamos una nueva instancia de Linea con los datos del cuerpo de la petición
     const linea  = new Linea({
         nombre,
         label,
-        color,
+        colorFondo,
+        colorTexto,
         servicio
     });
 
@@ -74,10 +75,10 @@ export const lineaPut = async (req = request, res = response) => {
     const { id } = req.params;
 
     // Obtenemos los datos de la línea
-    const { nombre, label, color, servicio } = req.body;
+    const { nombre, label, colorFondo, colorTexto, servicio } = req.body;
 
     // Actualizamos la línea
-    const linea = await Linea.findByIdAndUpdate( id, { nombre, label, color, servicio });
+    const linea = await Linea.findByIdAndUpdate( id, { nombre, label, colorFondo, colorTexto, servicio });
 
     // Devolvemos la línea conforme se ha creado
     res.status(201).json({ mensaje: 'Actualizado correctamente', data: linea });

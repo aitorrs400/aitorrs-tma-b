@@ -11,9 +11,13 @@ const LineaSchema = new Schema({
         type: String,
         required: [true, 'El label de la línea es obligatorio']
     },
-    color: {
+    colorFondo: {
         type: String,
-        required: [true, 'El código de color de la línea es obligatorio']
+        required: [true, 'El código de color de fondo de la línea es obligatorio']
+    },
+    colorTexto: {
+        type: String,
+        required: [true, 'El código de color de texto de la línea es obligatorio']
     },
     servicio: {
         type: mongoose.Schema.Types.ObjectId,

@@ -25,7 +25,8 @@ router.post('/', [
     validarJWT,
     check('nombre', 'El nombre de la línea es obligatorio').notEmpty(),
     check('label', 'El label de la línea es obligatorio').notEmpty(),
-    check('color', 'El código de color de la línea es obligatorio').notEmpty(),
+    check('colorFondo', 'El código de color de fondo de la línea es obligatorio').notEmpty(),
+    check('colorTexto', 'El código de color de texto de la línea es obligatorio').notEmpty(),
     check('servicio', 'El ID de servicio no es un ID válido').isMongoId(),
     check('servicio').custom( existeServicioPorId ),
     validarCampos
@@ -37,7 +38,8 @@ router.put('/:id', [
     check('id').custom( existeLineaPorId ),
     check('nombre', 'El nombre de la línea es obligatorio').notEmpty(),
     check('label', 'El label de la línea es obligatorio').notEmpty(),
-    check('color', 'El código de color de la línea es obligatorio').notEmpty(),
+    check('colorFondo', 'El código de color de fondo de la línea es obligatorio').notEmpty(),
+    check('colorTexto', 'El código de color de texto de la línea es obligatorio').notEmpty(),
     check('servicio', 'El ID de servicio no es un ID válido').isMongoId(),
     check('servicio').custom( existeServicioPorId ),
     validarCampos
