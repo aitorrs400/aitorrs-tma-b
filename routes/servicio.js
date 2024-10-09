@@ -13,7 +13,12 @@ const router = Router();
 
 router.get('/', [validarJWT], servicioGet);
 
-router.get('/:id', [validarJWT], servicioIDGet);
+router.get('/:id', [
+    validarJWT,
+    check('id', 'No es un ID válido').isMongoId(),
+    check('id').custom( existeServicioPorId ),
+    validarCampos
+], servicioIDGet);
 
 router.post('/', [
     validarJWT,

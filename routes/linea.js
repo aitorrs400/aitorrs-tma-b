@@ -3,7 +3,8 @@ import { check } from 'express-validator';
 import { validarCampos } from '../middlewares/validarCampos.js';
 import { servicioDelete, servicioGet, servicioIDGet, servicioPost, servicioPut } from '../controllers/servicio.js';
 import { validarJWT } from '../middlewares/validarJWT.js';
-import { existeServicioPorId } from '../helpers/dbValidators.js';
+import { existeLineaPorId, existeServicioPorId } from '../helpers/dbValidators.js';
+import { lineaDelete, lineaGet, lineaIDGet, lineaPost, lineaPut } from '../controllers/linea.js';
 
 
 // Preparamos el enrutador
@@ -11,9 +12,14 @@ const router = Router();
 
 // Ruta principal: /api/servicio
 
-// router.get('/', [validarJWT], servicioGet);
+router.get('/', [validarJWT], lineaGet);
 
-// router.get('/:id', [validarJWT], servicioIDGet);
+router.get('/:id', [
+    validarJWT,
+    check('id', 'No es un ID válido').isMongoId(),
+    check('id').custom( existeLineaPorId ),
+    validarCampos
+], lineaIDGet);
 
 router.post('/', [
     validarJWT,
@@ -23,22 +29,25 @@ router.post('/', [
     check('servicio', 'El ID de servicio no es un ID válido').isMongoId(),
     check('servicio').custom( existeServicioPorId ),
     validarCampos
-], servicioPost );
+], lineaPost );
 
-// router.put('/:id', [
-//     validarJWT,
-//     check('id', 'No es un ID válido').isMongoId(),
-//     check('id').custom( existeServicioPorId ),
-//     check('nombre', 'El nombre del servicio es obligatorio').notEmpty(),
-//     check('imagen', 'La imagen del servicio es obligatoria').notEmpty(),
-//     validarCampos
-// ], servicioPut );
+router.put('/:id', [
+    validarJWT,
+    check('id', 'No es un ID válido').isMongoId(),
+    check('id').custom( existeLineaPorId ),
+    check('nombre', 'El nombre de la línea es obligatorio').notEmpty(),
+    check('label', 'El label de la línea es obligatorio').notEmpty(),
+    check('color', 'El código de color de la línea es obligatorio').notEmpty(),
+    check('servicio', 'El ID de servicio no es un ID válido').isMongoId(),
+    check('servicio').custom( existeServicioPorId ),
+    validarCampos
+], lineaPut );
 
-// router.delete('/:id', [
-//     validarJWT,
-//     check('id', 'No es un ID válido').isMongoId(),
-//     check('id').custom( existeServicioPorId ),
-//     validarCampos
-// ], servicioDelete );
+router.delete('/:id', [
+    validarJWT,
+    check('id', 'No es un ID válido').isMongoId(),
+    check('id').custom( existeLineaPorId ),
+    validarCampos
+], lineaDelete );
 
 export default router;

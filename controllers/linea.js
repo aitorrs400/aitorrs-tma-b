@@ -1,51 +1,50 @@
 import { request, response } from "express";
-import Servicio from "../models/Servicio.js";
 import Linea from "../models/Linea.js";
 
 
-// export const servicioGet = async (req = request, res = response) => {
+export const lineaGet = async (req = request, res = response) => {
 
-//     // Obtenemos el total de servicios
-//     const [ total, servicios ] = await Promise.all([
-//         Servicio.countDocuments(),
-//         Servicio.find()
-//     ]);
+    // Obtenemos el total de lineas
+    const [ total, lineas ] = await Promise.all([
+        Linea.countDocuments(),
+        Linea.find()
+    ]);
 
-//     // Devolvemos el resultado
-//     return res.status(200).json({
-//         uid: req.uid,
-//         total,
-//         servicios
-//     });
+    // Devolvemos el resultado
+    return res.status(200).json({
+        uid: req.uid,
+        total,
+        lineas
+    });
 
-// }
+}
 
-// export const servicioIDGet = async (req = request, res = response) => {
+export const lineaIDGet = async (req = request, res = response) => {
 
-//     try {
+    try {
 
-//         // Obtenemos el ID de la URL
-//         const id = req.params.id;
+        // Obtenemos el ID de la URL
+        const id = req.params.id;
     
-//         // Buscamos el servicio en la base de datos por el ID
-//         const servicio = await Servicio.findById(id);
+        // Buscamos la línea en la base de datos por el ID
+        const linea = await Linea.findById(id);
     
-//         // Si no encontramos ningún servicio con ese ID, devolvemos un mensaje de error
-//         if ( !servicio ) {
-//             return res.status(404).json({ data: [], mensaje: 'Registro no encontrado' });
-//         }
+        // Si no encontramos ninguna línea con ese ID, devolvemos un mensaje de error
+        if ( !linea ) {
+            return res.status(404).json({ data: [], mensaje: 'Registro no encontrado' });
+        }
     
-//         // Si encontramos el servicio, lo devolvemos como respuesta
-//         res.json({ data: servicio, mensaje: 'Registro obtenido correctamente' });
+        // Si encontramos la línea, lo devolvemos como respuesta
+        res.json({ data: linea, mensaje: 'Registro obtenido correctamente' });
 
-//     } catch (error) {
+    } catch (error) {
 
-//         // Si ocurre algún error, devuelve un mensaje de error y el código de estado 500 (Error del servidor)
-//         res.status(500).json({ data: [], mensaje: 'Error del servidor', error });
+        // Si ocurre algún error, devuelve un mensaje de error y el código de estado 500 (Error del servidor)
+        res.status(500).json({ data: [], mensaje: 'Error del servidor', error });
 
-//     }
+    }
 
-// }
+}
 
 export const lineaPost = async ( req = request, res = response ) => {
 
@@ -69,40 +68,40 @@ export const lineaPost = async ( req = request, res = response ) => {
 
 }
 
-// export const servicioPut = async (req = request, res = response) => {
+export const lineaPut = async (req = request, res = response) => {
 
-//     // Obtenemos el ID del servicio
-//     const { id } = req.params;
+    // Obtenemos el ID de la línea
+    const { id } = req.params;
 
-//     // Obtenemos los datos del servicio
-//     const { nombre, imagen } = req.body;
+    // Obtenemos los datos de la línea
+    const { nombre, label, color, servicio } = req.body;
 
-//     // Actualizamos el servicio
-//     const servicio = await Servicio.findByIdAndUpdate( id, { nombre, imagen });
+    // Actualizamos la línea
+    const linea = await Linea.findByIdAndUpdate( id, { nombre, label, color, servicio });
 
-//     // Devolvemos el servicio conforme se ha creado
-//     res.status(201).json({ mensaje: 'Actualizado correctamente', data: servicio });
+    // Devolvemos la línea conforme se ha creado
+    res.status(201).json({ mensaje: 'Actualizado correctamente', data: linea });
 
-// }
+}
 
-// export const servicioDelete = async (req = request, res = response) => {
+export const lineaDelete = async (req = request, res = response) => {
 
-//     // Obtenemos el ID del servicio
-//     const { id } = req.params;
+    // Obtenemos el ID de la línea
+    const { id } = req.params;
 
-//     try {
+    try {
 
-//         // Eliminamos el servicio
-//         const servicio = await Servicio.deleteOne({ _id: id });
+        // Eliminamos la línea
+        const linea = await Linea.deleteOne({ _id: id });
 
-//         // Devolvemos el resultado
-//         res.status(200).json({ mensaje: 'Eliminado correctamente', data: servicio });
+        // Devolvemos el resultado
+        res.status(200).json({ mensaje: 'Eliminado correctamente', data: linea });
 
-//     } catch (error) {
+    } catch (error) {
 
-//         // Si ha habido algún error, devolvemos error 500
-//         res.status(500).json( error );
+        // Si ha habido algún error, devolvemos error 500
+        res.status(500).json( error );
 
-//     }
+    }
 
-// }
+}
