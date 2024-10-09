@@ -1,108 +1,105 @@
 import { request, response } from "express";
-import Linea from "../models/Linea.js";
+import Parada from "../models/Parada.js";
 
 
-// export const lineaGet = async (req = request, res = response) => {
+export const paradaGet = async (req = request, res = response) => {
 
-//     // Obtenemos el total de lineas
-//     const [ total, lineas ] = await Promise.all([
-//         Linea.countDocuments(),
-//         Linea.find()
-//     ]);
+    // Obtenemos el total de paradas
+    const [ total, paradas ] = await Promise.all([
+        Parada.countDocuments(),
+        Parada.find()
+    ]);
 
-//     // Devolvemos el resultado
-//     return res.status(200).json({
-//         uid: req.uid,
-//         total,
-//         lineas
-//     });
+    // Devolvemos el resultado
+    return res.status(200).json({
+        uid: req.uid,
+        total,
+        paradas
+    });
 
-// }
+}
 
-// export const lineaIDGet = async (req = request, res = response) => {
+export const paradaIDGet = async (req = request, res = response) => {
 
-//     try {
+    try {
 
-//         // Obtenemos el ID de la URL
-//         const id = req.params.id;
+        // Obtenemos el ID de la URL
+        const id = req.params.id;
     
-//         // Buscamos la línea en la base de datos por el ID
-//         const linea = await Linea.findById(id);
+        // Buscamos la parada en la base de datos por el ID
+        const parada = await Parada.findById(id);
     
-//         // Si no encontramos ninguna línea con ese ID, devolvemos un mensaje de error
-//         if ( !linea ) {
-//             return res.status(404).json({ data: [], mensaje: 'Registro no encontrado' });
-//         }
+        // Si no encontramos ninguna parada con ese ID, devolvemos un mensaje de error
+        if ( !parada ) {
+            return res.status(404).json({ data: [], mensaje: 'Registro no encontrado' });
+        }
     
-//         // Si encontramos la línea, lo devolvemos como respuesta
-//         res.json({ data: linea, mensaje: 'Registro obtenido correctamente' });
+        // Si encontramos la parada, lo devolvemos como respuesta
+        res.json({ data: parada, mensaje: 'Registro obtenido correctamente' });
 
-//     } catch (error) {
+    } catch (error) {
 
-//         // Si ocurre algún error, devuelve un mensaje de error y el código de estado 500 (Error del servidor)
-//         res.status(500).json({ data: [], mensaje: 'Error del servidor', error });
+        // Si ocurre algún error, devuelve un mensaje de error y el código de estado 500 (Error del servidor)
+        res.status(500).json({ data: [], mensaje: 'Error del servidor', error });
 
-//     }
+    }
 
-// }
+}
 
-// export const lineaPost = async ( req = request, res = response ) => {
+export const paradaPost = async ( req = request, res = response ) => {
 
-//     // Obtenemos los datos de la linea
-//     const { nombre, label, colorFondo, colorTexto, servicio } = req.body;
+    // Obtenemos los datos de la parada
+    const { codigo, nombre, linea } = req.body;
 
-//     // Creamos una nueva instancia de Linea con los datos del cuerpo de la petición
-//     const linea  = new Linea({
-//         nombre,
-//         label,
-//         colorFondo,
-//         colorTexto,
-//         servicio
-//     });
+    // Creamos una nueva instancia de Parada con los datos del cuerpo de la petición
+    const parada  = new Parada({
+        codigo,
+        nombre,
+        linea
+    });
 
-//     console.log(linea)
-//     // Guardamos el servicio en la base de datos
-//     await linea.save();
+    // Guardamos la parada en la base de datos
+    await parada.save();
 
-//     // Devolvemos el servicio conforme se ha creado
-//     return res.status(201).json( linea );
+    // Devolvemos la parada conforme se ha creado
+    return res.status(201).json( parada );
 
-// }
+}
 
-// export const lineaPut = async (req = request, res = response) => {
+export const paradaPut = async (req = request, res = response) => {
 
-//     // Obtenemos el ID de la línea
-//     const { id } = req.params;
+    // Obtenemos el ID de la parada
+    const { id } = req.params;
 
-//     // Obtenemos los datos de la línea
-//     const { nombre, label, colorFondo, colorTexto, servicio } = req.body;
+    // Obtenemos los datos de la parada
+    const { codigo, nombre, linea } = req.body;
 
-//     // Actualizamos la línea
-//     const linea = await Linea.findByIdAndUpdate( id, { nombre, label, colorFondo, colorTexto, servicio });
+    // Actualizamos la parada
+    const parada = await Parada.findByIdAndUpdate( id, { codigo, nombre, linea });
 
-//     // Devolvemos la línea conforme se ha creado
-//     res.status(201).json({ mensaje: 'Actualizado correctamente', data: linea });
+    // Devolvemos la parada conforme se ha creado
+    res.status(201).json({ mensaje: 'Actualizado correctamente', data: parada });
 
-// }
+}
 
-// export const lineaDelete = async (req = request, res = response) => {
+export const paradaDelete = async (req = request, res = response) => {
 
-//     // Obtenemos el ID de la línea
-//     const { id } = req.params;
+    // Obtenemos el ID de la parada
+    const { id } = req.params;
 
-//     try {
+    try {
 
-//         // Eliminamos la línea
-//         const linea = await Linea.deleteOne({ _id: id });
+        // Eliminamos la parada
+        const parada = await Parada.deleteOne({ _id: id });
 
-//         // Devolvemos el resultado
-//         res.status(200).json({ mensaje: 'Eliminado correctamente', data: linea });
+        // Devolvemos el resultado
+        res.status(200).json({ mensaje: 'Eliminado correctamente', data: parada });
 
-//     } catch (error) {
+    } catch (error) {
 
-//         // Si ha habido algún error, devolvemos error 500
-//         res.status(500).json( error );
+        // Si ha habido algún error, devolvemos error 500
+        res.status(500).json( error );
 
-//     }
+    }
 
-// }
+}

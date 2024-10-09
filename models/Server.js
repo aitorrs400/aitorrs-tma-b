@@ -3,7 +3,7 @@ import cors from 'cors';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { dbConnection } from '../database/config.js';
-import { authRoutes, servicioRoutes, lineaRoutes } from '../routes/index.js';
+import { authRoutes, servicioRoutes, lineaRoutes, paradaRoutes } from '../routes/index.js';
 
 class Server {
     
@@ -49,7 +49,7 @@ class Server {
         this.app.use(this.authPath, authRoutes);
         this.app.use(this.servicioPath, servicioRoutes);
         this.app.use(this.lineaPath, lineaRoutes);
-        // this.app.use(this.lineaPath, lineaRoutes);
+        this.app.use(this.paradaPath, paradaRoutes);
 
         // Preparamos variables para el directorio
         const __filename = fileURLToPath(import.meta.url);

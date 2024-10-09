@@ -9,10 +9,6 @@ const ParadaSchema = new Schema({
         type: String,
         required: [true, 'El nombre de la parada es obligatorio']
     },
-    lineas: [{
-        type: mongoose.Schema.Types.ObjectId,
-        required: [true, 'El identificador de la linea es obligatorio']
-    }],
     linea: {
         type: mongoose.Schema.Types.ObjectId,
         required: [true, 'El identificador de la línea es obligatorio']

@@ -1,55 +1,50 @@
-// import { Router } from 'express';
-// import { check } from 'express-validator';
-// import { validarCampos } from '../middlewares/validarCampos.js';
-// import { servicioDelete, servicioGet, servicioIDGet, servicioPost, servicioPut } from '../controllers/servicio.js';
-// import { validarJWT } from '../middlewares/validarJWT.js';
-// import { existeLineaPorId, existeServicioPorId } from '../helpers/dbValidators.js';
-// import { lineaDelete, lineaGet, lineaIDGet, lineaPost, lineaPut } from '../controllers/linea.js';
+import { Router } from 'express';
+import { check } from 'express-validator';
+import { validarCampos } from '../middlewares/validarCampos.js';
+import { validarJWT } from '../middlewares/validarJWT.js';
+import { existeLineaPorId, existeParadaPorId } from '../helpers/dbValidators.js';
+import { paradaDelete, paradaGet, paradaIDGet, paradaPost, paradaPut } from '../controllers/parada.js';
 
 
-// // Preparamos el enrutador
-// const router = Router();
+// Preparamos el enrutador
+const router = Router();
 
-// // Ruta principal: /api/servicio
+// Ruta principal: /api/parada
 
-// router.get('/', [validarJWT], lineaGet);
+router.get('/', [validarJWT], paradaGet);
 
-// router.get('/:id', [
-//     validarJWT,
-//     check('id', 'No es un ID válido').isMongoId(),
-//     check('id').custom( existeLineaPorId ),
-//     validarCampos
-// ], lineaIDGet);
+router.get('/:id', [
+    validarJWT,
+    check('id', 'No es un ID válido').isMongoId(),
+    check('id').custom( existeParadaPorId ),
+    validarCampos
+], paradaIDGet );
 
-// router.post('/', [
-//     validarJWT,
-//     check('nombre', 'El nombre de la línea es obligatorio').notEmpty(),
-//     check('label', 'El label de la línea es obligatorio').notEmpty(),
-//     check('colorFondo', 'El código de color de fondo de la línea es obligatorio').notEmpty(),
-//     check('colorTexto', 'El código de color de texto de la línea es obligatorio').notEmpty(),
-//     check('servicio', 'El ID de servicio no es un ID válido').isMongoId(),
-//     check('servicio').custom( existeServicioPorId ),
-//     validarCampos
-// ], lineaPost );
+router.post('/', [
+    validarJWT,
+    check('codigo', 'El código de la parada es obligatorio').notEmpty(),
+    check('nombre', 'El nombre de la parada es obligatorio').notEmpty(),
+    check('linea', 'El ID de línea no es un ID válido').isMongoId(),
+    check('linea').custom( existeLineaPorId ),
+    validarCampos
+], paradaPost );
 
-// router.put('/:id', [
-//     validarJWT,
-//     check('id', 'No es un ID válido').isMongoId(),
-//     check('id').custom( existeLineaPorId ),
-//     check('nombre', 'El nombre de la línea es obligatorio').notEmpty(),
-//     check('label', 'El label de la línea es obligatorio').notEmpty(),
-//     check('colorFondo', 'El código de color de fondo de la línea es obligatorio').notEmpty(),
-//     check('colorTexto', 'El código de color de texto de la línea es obligatorio').notEmpty(),
-//     check('servicio', 'El ID de servicio no es un ID válido').isMongoId(),
-//     check('servicio').custom( existeServicioPorId ),
-//     validarCampos
-// ], lineaPut );
+router.put('/:id', [
+    validarJWT,
+    check('id', 'No es un ID válido').isMongoId(),
+    check('id').custom( existeParadaPorId ),
+    check('codigo', 'El código de la parada es obligatorio').notEmpty(),
+    check('nombre', 'El nombre de la parada es obligatorio').notEmpty(),
+    check('linea', 'El ID de línea no es un ID válido').isMongoId(),
+    check('linea').custom( existeLineaPorId ),
+    validarCampos
+], paradaPut );
 
-// router.delete('/:id', [
-//     validarJWT,
-//     check('id', 'No es un ID válido').isMongoId(),
-//     check('id').custom( existeLineaPorId ),
-//     validarCampos
-// ], lineaDelete );
+router.delete('/:id', [
+    validarJWT,
+    check('id', 'No es un ID válido').isMongoId(),
+    check('id').custom( existeParadaPorId ),
+    validarCampos
+], paradaDelete );
 
-// export default router;
+export default router;

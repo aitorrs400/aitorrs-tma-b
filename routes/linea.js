@@ -10,7 +10,7 @@ import { lineaDelete, lineaGet, lineaIDGet, lineaPost, lineaPut } from '../contr
 // Preparamos el enrutador
 const router = Router();
 
-// Ruta principal: /api/servicio
+// Ruta principal: /api/linea
 
 router.get('/', [validarJWT], lineaGet);
 
