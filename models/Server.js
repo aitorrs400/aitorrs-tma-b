@@ -15,6 +15,7 @@ class Server {
         this.authPath = '/api/auth';
         this.servicioPath = '/api/servicio';
         this.lineaPath = '/api/linea';
+        this.paradaPath = '/api/parada';
 
         // Conexión a la base de datos
         this.conexionDB();
@@ -48,6 +49,7 @@ class Server {
         this.app.use(this.authPath, authRoutes);
         this.app.use(this.servicioPath, servicioRoutes);
         this.app.use(this.lineaPath, lineaRoutes);
+        // this.app.use(this.lineaPath, lineaRoutes);
 
         // Preparamos variables para el directorio
         const __filename = fileURLToPath(import.meta.url);
