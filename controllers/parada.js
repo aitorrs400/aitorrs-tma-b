@@ -46,6 +46,33 @@ export const paradaIDGet = async (req = request, res = response) => {
 
 }
 
+export const paradaCodeGet = async (req = request, res = response) => {
+
+    try {
+
+        // Obtenemos el código de la URL
+        const codigo = req.params.code;
+    
+        // Buscamos la parada en la base de datos por el código
+        const parada = await Parada.findOne({ codigo });
+    
+        // Si no encontramos ninguna parada con ese ID, devolvemos un mensaje de error
+        if ( !parada ) {
+            return res.status(404).json({ data: [], mensaje: 'Registro no encontrado' });
+        }
+    
+        // Si encontramos la parada, lo devolvemos como respuesta
+        res.json({ data: parada, mensaje: 'Registro obtenido correctamente' });
+
+    } catch (error) {
+
+        // Si ocurre algún error, devuelve un mensaje de error y el código de estado 500 (Error del servidor)
+        res.status(500).json({ data: [], mensaje: 'Error del servidor', error });
+
+    }
+
+}
+
 export const paradaPost = async ( req = request, res = response ) => {
 
     // Obtenemos los datos de la parada

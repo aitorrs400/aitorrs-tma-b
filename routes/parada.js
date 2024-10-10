@@ -3,7 +3,7 @@ import { check } from 'express-validator';
 import { validarCampos } from '../middlewares/validarCampos.js';
 import { validarJWT } from '../middlewares/validarJWT.js';
 import { existeLineaPorId, existeParadaPorId } from '../helpers/dbValidators.js';
-import { paradaDelete, paradaGet, paradaIDGet, paradaPost, paradaPut } from '../controllers/parada.js';
+import { paradaCodeGet, paradaDelete, paradaGet, paradaIDGet, paradaPost, paradaPut } from '../controllers/parada.js';
 
 
 // Preparamos el enrutador
@@ -19,6 +19,12 @@ router.get('/:id', [
     check('id').custom( existeParadaPorId ),
     validarCampos
 ], paradaIDGet );
+
+router.get('/codigo/:code', [
+    validarJWT,
+    check('code', 'El código de la parada es obligatorio').notEmpty(),
+    validarCampos
+], paradaCodeGet );
 
 router.post('/', [
     validarJWT,
