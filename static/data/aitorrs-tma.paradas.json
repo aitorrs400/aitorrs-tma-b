@@ -1,0 +1,1749 @@
+[{
+  "_id": {
+    "$oid": "670781d76b3101669f72af87"
+  },
+  "codigo": "0111",
+  "nombre": "Hospital de Bellvitge",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670781df6b3101669f72af8a"
+  },
+  "codigo": "0112",
+  "nombre": "Bellvitge",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670781ea6b3101669f72af8d"
+  },
+  "codigo": "0113",
+  "nombre": "Av. Carrilet",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670781f46b3101669f72af90"
+  },
+  "codigo": "0114",
+  "nombre": "Rambla Just Oliveras",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670782216b3101669f72afa3"
+  },
+  "codigo": "0115",
+  "nombre": "Can Serra",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707822a6b3101669f72afa6"
+  },
+  "codigo": "0116",
+  "nombre": "Florida",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670782366b3101669f72afa9"
+  },
+  "codigo": "0117",
+  "nombre": "Torrassa",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670782406b3101669f72afac"
+  },
+  "codigo": "0118",
+  "nombre": "Santa Eulàlia",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707824e6b3101669f72afaf"
+  },
+  "codigo": "0119",
+  "nombre": "Mercat Nou",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707825a6b3101669f72afb2"
+  },
+  "codigo": "0120",
+  "nombre": "Plaça de Sants",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670782636b3101669f72afb5"
+  },
+  "codigo": "0121",
+  "nombre": "Hostafrancs",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707826d6b3101669f72afb8"
+  },
+  "codigo": "0122",
+  "nombre": "Espanya",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707827d6b3101669f72afbb"
+  },
+  "codigo": "0123",
+  "nombre": "Rocafort",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707828c6b3101669f72afbe"
+  },
+  "codigo": "0124",
+  "nombre": "Urgell",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670782966b3101669f72afc1"
+  },
+  "codigo": "0125",
+  "nombre": "Universitat",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670782a16b3101669f72afc4"
+  },
+  "codigo": "0126",
+  "nombre": "Catalunya",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670782a96b3101669f72afc7"
+  },
+  "codigo": "0127",
+  "nombre": "Urquinaona",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670782b46b3101669f72afca"
+  },
+  "codigo": "0128",
+  "nombre": "Arc de Triomf",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670782c56b3101669f72afcd"
+  },
+  "codigo": "0129",
+  "nombre": "Marina",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670782d16b3101669f72afd0"
+  },
+  "codigo": "0130",
+  "nombre": "Glòries",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670782de6b3101669f72afd3"
+  },
+  "codigo": "0131",
+  "nombre": "Clot",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670782e66b3101669f72afd6"
+  },
+  "codigo": "0132",
+  "nombre": "Navas",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670782f06b3101669f72afd9"
+  },
+  "codigo": "0133",
+  "nombre": "La Sagrera",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670782fc6b3101669f72afdc"
+  },
+  "codigo": "0134",
+  "nombre": "Fabra i Puig",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707830d6b3101669f72afdf"
+  },
+  "codigo": "0135",
+  "nombre": "Sant Andreu",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670783196b3101669f72afe2"
+  },
+  "codigo": "0136",
+  "nombre": "Torras i Bages",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670783266b3101669f72afe5"
+  },
+  "codigo": "0137",
+  "nombre": "Trinitat Vella",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670783316b3101669f72afe8"
+  },
+  "codigo": "0138",
+  "nombre": "Baró de Viver",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707833f6b3101669f72afeb"
+  },
+  "codigo": "0139",
+  "nombre": "Santa Coloma",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707834a6b3101669f72afee"
+  },
+  "codigo": "0140",
+  "nombre": "Fondo",
+  "linea": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707870a6b3101669f72b037"
+  },
+  "codigo": "0210",
+  "nombre": "Paral·lel",
+  "linea": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670787156b3101669f72b03a"
+  },
+  "codigo": "0211",
+  "nombre": "Sant Antoni",
+  "linea": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707871e6b3101669f72b03d"
+  },
+  "codigo": "0212",
+  "nombre": "Universitat",
+  "linea": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670787286b3101669f72b040"
+  },
+  "codigo": "0213",
+  "nombre": "Passeig de Gràcia",
+  "linea": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670787376b3101669f72b043"
+  },
+  "codigo": "0214",
+  "nombre": "Tetuan",
+  "linea": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670787436b3101669f72b046"
+  },
+  "codigo": "0215",
+  "nombre": "Monumental",
+  "linea": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707874e6b3101669f72b049"
+  },
+  "codigo": "0216",
+  "nombre": "Sagrada Família",
+  "linea": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670787596b3101669f72b04c"
+  },
+  "codigo": "0217",
+  "nombre": "Encants",
+  "linea": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670787666b3101669f72b04f"
+  },
+  "codigo": "0218",
+  "nombre": "Clot",
+  "linea": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670787726b3101669f72b052"
+  },
+  "codigo": "0219",
+  "nombre": "Bac de Roda",
+  "linea": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707877b6b3101669f72b055"
+  },
+  "codigo": "0220",
+  "nombre": "Sant Martí",
+  "linea": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670787866b3101669f72b058"
+  },
+  "codigo": "0221",
+  "nombre": "La Pau",
+  "linea": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670787976b3101669f72b05b"
+  },
+  "codigo": "0222",
+  "nombre": "Verneda",
+  "linea": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670787a46b3101669f72b05e"
+  },
+  "codigo": "0223",
+  "nombre": "Artigues | Sant Adrià",
+  "linea": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670787af6b3101669f72b061"
+  },
+  "codigo": "0224",
+  "nombre": "Sant Roc",
+  "linea": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670787b96b3101669f72b064"
+  },
+  "codigo": "0225",
+  "nombre": "Gorg",
+  "linea": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670787c66b3101669f72b067"
+  },
+  "codigo": "0226",
+  "nombre": "Pep Ventura",
+  "linea": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670787d36b3101669f72b06a"
+  },
+  "codigo": "0227",
+  "nombre": "Badalona Pompeu Fabra",
+  "linea": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670788366b3101669f72b089"
+  },
+  "codigo": "0314",
+  "nombre": "Zona Universitària",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670788446b3101669f72b08c"
+  },
+  "codigo": "0315",
+  "nombre": "Palau Reial",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670788506b3101669f72b08f"
+  },
+  "codigo": "0316",
+  "nombre": "Maria Cristina",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707885b6b3101669f72b092"
+  },
+  "codigo": "0317",
+  "nombre": "Les Corts",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670788686b3101669f72b095"
+  },
+  "codigo": "0318",
+  "nombre": "Plaça del Centre",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670788736b3101669f72b098"
+  },
+  "codigo": "0319",
+  "nombre": "Sants Estació",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707887d6b3101669f72b09b"
+  },
+  "codigo": "0320",
+  "nombre": "Tarragona",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670788866b3101669f72b09e"
+  },
+  "codigo": "0322",
+  "nombre": "Poble Sec",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670788c76b3101669f72b0cd"
+  },
+  "codigo": "0323",
+  "nombre": "Paral·lel",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670788d26b3101669f72b0d0"
+  },
+  "codigo": "0324",
+  "nombre": "Drassanes",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670788de6b3101669f72b0d3"
+  },
+  "codigo": "0325",
+  "nombre": "Liceu",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670788ea6b3101669f72b0d6"
+  },
+  "codigo": "0326",
+  "nombre": "Catalunya",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670788f96b3101669f72b0d9"
+  },
+  "codigo": "0327",
+  "nombre": "Passeig de Gràcia",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670789046b3101669f72b0dc"
+  },
+  "codigo": "0328",
+  "nombre": "Diagonal",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707890e6b3101669f72b0df"
+  },
+  "codigo": "0329",
+  "nombre": "Fontana",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670789196b3101669f72b0e2"
+  },
+  "codigo": "0330",
+  "nombre": "Lesseps",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707892e6b3101669f72b0e5"
+  },
+  "codigo": "0331",
+  "nombre": "Vallcarca",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670789386b3101669f72b0e8"
+  },
+  "codigo": "0332",
+  "nombre": "Penitents",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670789466b3101669f72b0eb"
+  },
+  "codigo": "0333",
+  "nombre": "Vall d'Hebron",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670789536b3101669f72b0ee"
+  },
+  "codigo": "0334",
+  "nombre": "Montbau",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707897e6b3101669f72b0f1"
+  },
+  "codigo": "0335",
+  "nombre": "Mundet",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670789876b3101669f72b0f4"
+  },
+  "codigo": "0336",
+  "nombre": "Valldaura",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670789906b3101669f72b0f7"
+  },
+  "codigo": "0337",
+  "nombre": "Canyelles",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707899c6b3101669f72b0fa"
+  },
+  "codigo": "0338",
+  "nombre": "Roquetes",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670789ac6b3101669f72b0fd"
+  },
+  "codigo": "0339",
+  "nombre": "Trinitat Nova",
+  "linea": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078a0b6b3101669f72b11c"
+  },
+  "codigo": "0413",
+  "nombre": "La Pau",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078a166b3101669f72b11f"
+  },
+  "codigo": "0414",
+  "nombre": "Besòs",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078a246b3101669f72b122"
+  },
+  "codigo": "0415",
+  "nombre": "Besòs Mar",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078a306b3101669f72b125"
+  },
+  "codigo": "0416",
+  "nombre": "El Maresme | Fòrum",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078a476b3101669f72b12c"
+  },
+  "codigo": "0417",
+  "nombre": "Selva de Mar",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078a516b3101669f72b12f"
+  },
+  "codigo": "0418",
+  "nombre": "Poblenou",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078a5a6b3101669f72b132"
+  },
+  "codigo": "0419",
+  "nombre": "Llacuna",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078a636b3101669f72b135"
+  },
+  "codigo": "0420",
+  "nombre": "Bogatell",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078a726b3101669f72b138"
+  },
+  "codigo": "0421",
+  "nombre": "Ciutadella | Vila Olímpica",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078a7b6b3101669f72b13b"
+  },
+  "codigo": "0422",
+  "nombre": "Barceloneta",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078a936b3101669f72b13e"
+  },
+  "codigo": "0423",
+  "nombre": "Jaume I",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078a9e6b3101669f72b141"
+  },
+  "codigo": "0424",
+  "nombre": "Urquinaona",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078ab16b3101669f72b144"
+  },
+  "codigo": "0425",
+  "nombre": "Passeig de Gràcia",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078aba6b3101669f72b147"
+  },
+  "codigo": "0426",
+  "nombre": "Girona",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078ac46b3101669f72b14a"
+  },
+  "codigo": "0427",
+  "nombre": "Verdaguer",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078acd6b3101669f72b14d"
+  },
+  "codigo": "0428",
+  "nombre": "Joanic",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078ade6b3101669f72b150"
+  },
+  "codigo": "0429",
+  "nombre": "Alfons X",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078aec6b3101669f72b153"
+  },
+  "codigo": "0430",
+  "nombre": "Guinardó | Hospital de Sant Pau",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078af86b3101669f72b156"
+  },
+  "codigo": "0431",
+  "nombre": "Maragall",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078b036b3101669f72b159"
+  },
+  "codigo": "0432",
+  "nombre": "Llucmajor",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078b126b3101669f72b15c"
+  },
+  "codigo": "0433",
+  "nombre": "Via Júlia",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078b1d6b3101669f72b15f"
+  },
+  "codigo": "0434",
+  "nombre": "Trinitat Nova",
+  "linea": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078b8d6b3101669f72b18a"
+  },
+  "codigo": "0509",
+  "nombre": "Cornellà Centre",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078b976b3101669f72b18d"
+  },
+  "codigo": "0510",
+  "nombre": "Gavarra",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078ba36b3101669f72b190"
+  },
+  "codigo": "0511",
+  "nombre": "Sant Ildefons",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078bad6b3101669f72b193"
+  },
+  "codigo": "0512",
+  "nombre": "Can Boixeres",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078bde6b3101669f72b196"
+  },
+  "codigo": "0513",
+  "nombre": "Can Vidalet",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078be96b3101669f72b199"
+  },
+  "codigo": "0514",
+  "nombre": "Pubilla Cases",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078bf46b3101669f72b19c"
+  },
+  "codigo": "0555",
+  "nombre": "Ernest Lluch",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078bff6b3101669f72b19f"
+  },
+  "codigo": "0515",
+  "nombre": "Collblanc",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078c176b3101669f72b1a2"
+  },
+  "codigo": "0516",
+  "nombre": "Badal",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078c246b3101669f72b1a5"
+  },
+  "codigo": "0517",
+  "nombre": "Sants Estació",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078c2e6b3101669f72b1a8"
+  },
+  "codigo": "0519",
+  "nombre": "Entença",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078c3a6b3101669f72b1ab"
+  },
+  "codigo": "0520",
+  "nombre": "Hospital Clínic",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078c496b3101669f72b1ae"
+  },
+  "codigo": "0521",
+  "nombre": "Diagonal",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078c536b3101669f72b1b1"
+  },
+  "codigo": "0522",
+  "nombre": "Verdaguer",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078c5d6b3101669f72b1b4"
+  },
+  "codigo": "0523",
+  "nombre": "Sagrada Família",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078c6a6b3101669f72b1b7"
+  },
+  "codigo": "0524",
+  "nombre": "Sant Pau | Dos de Maig",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078c866b3101669f72b1ba"
+  },
+  "codigo": "0525",
+  "nombre": "Camp de l'Arpa",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078c936b3101669f72b1bd"
+  },
+  "codigo": "0526",
+  "nombre": "La Sagrera",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078c9f6b3101669f72b1c0"
+  },
+  "codigo": "0527",
+  "nombre": "Congrés",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078caa6b3101669f72b1c3"
+  },
+  "codigo": "0529",
+  "nombre": "Virrei Amat",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078cc06b3101669f72b1c6"
+  },
+  "codigo": "0530",
+  "nombre": "Vilapicina",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078ccb6b3101669f72b1c9"
+  },
+  "codigo": "0531",
+  "nombre": "Horta",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078cd96b3101669f72b1cc"
+  },
+  "codigo": "0532",
+  "nombre": "El Carmel",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078ce56b3101669f72b1cf"
+  },
+  "codigo": "0533",
+  "nombre": "El Coll | La Teixonera",
+  "linea": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078d696b3101669f72b1ee"
+  },
+  "codigo": "0931",
+  "nombre": "La Sagrera",
+  "linea": {
+    "$oid": "670781266b3101669f72af40"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078d746b3101669f72b1f1"
+  },
+  "codigo": "0932",
+  "nombre": "Onze de Setembre",
+  "linea": {
+    "$oid": "670781266b3101669f72af40"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078d7f6b3101669f72b1f4"
+  },
+  "codigo": "0933",
+  "nombre": "Bon Pastor",
+  "linea": {
+    "$oid": "670781266b3101669f72af40"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078d916b3101669f72b1f7"
+  },
+  "codigo": "0940",
+  "nombre": "Can Peixauet",
+  "linea": {
+    "$oid": "670781266b3101669f72af40"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078d9f6b3101669f72b1fa"
+  },
+  "codigo": "0941",
+  "nombre": "Santa Rosa",
+  "linea": {
+    "$oid": "670781266b3101669f72af40"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078daa6b3101669f72b1fd"
+  },
+  "codigo": "0942",
+  "nombre": "Fondo",
+  "linea": {
+    "$oid": "670781266b3101669f72af40"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078db86b3101669f72b200"
+  },
+  "codigo": "0943",
+  "nombre": "Església Major",
+  "linea": {
+    "$oid": "670781266b3101669f72af40"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078dc36b3101669f72b203"
+  },
+  "codigo": "0944",
+  "nombre": "Singuerlín",
+  "linea": {
+    "$oid": "670781266b3101669f72af40"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078dcf6b3101669f72b206"
+  },
+  "codigo": "0945",
+  "nombre": "Can Zam",
+  "linea": {
+    "$oid": "670781266b3101669f72af40"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078df96b3101669f72b21d"
+  },
+  "codigo": "0901",
+  "nombre": "Aeroport T1",
+  "linea": {
+    "$oid": "6707812e6b3101669f72af43"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078e016b3101669f72b220"
+  },
+  "codigo": "0903",
+  "nombre": "Aeroport T2",
+  "linea": {
+    "$oid": "6707812e6b3101669f72af43"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078e0d6b3101669f72b223"
+  },
+  "codigo": "0904",
+  "nombre": "Mas Blau",
+  "linea": {
+    "$oid": "6707812e6b3101669f72af43"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078e186b3101669f72b226"
+  },
+  "codigo": "0905",
+  "nombre": "Parc Nou",
+  "linea": {
+    "$oid": "6707812e6b3101669f72af43"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078e226b3101669f72b229"
+  },
+  "codigo": "0906",
+  "nombre": "Cèntric",
+  "linea": {
+    "$oid": "6707812e6b3101669f72af43"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078e336b3101669f72b22c"
+  },
+  "codigo": "0907",
+  "nombre": "El Prat Estació",
+  "linea": {
+    "$oid": "6707812e6b3101669f72af43"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078e3f6b3101669f72b22f"
+  },
+  "codigo": "0909",
+  "nombre": "Les Moreres",
+  "linea": {
+    "$oid": "6707812e6b3101669f72af43"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078e4f6b3101669f72b232"
+  },
+  "codigo": "0910",
+  "nombre": "Mercabarna",
+  "linea": {
+    "$oid": "6707812e6b3101669f72af43"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078e5c6b3101669f72b235"
+  },
+  "codigo": "0911",
+  "nombre": "Parc Logístic",
+  "linea": {
+    "$oid": "6707812e6b3101669f72af43"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078e666b3101669f72b238"
+  },
+  "codigo": "0912",
+  "nombre": "Fira",
+  "linea": {
+    "$oid": "6707812e6b3101669f72af43"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078e766b3101669f72b23b"
+  },
+  "codigo": "0913",
+  "nombre": "Europa | Fira",
+  "linea": {
+    "$oid": "6707812e6b3101669f72af43"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078e856b3101669f72b23e"
+  },
+  "codigo": "0914",
+  "nombre": "Can Tries | Gornal",
+  "linea": {
+    "$oid": "6707812e6b3101669f72af43"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078e986b3101669f72b241"
+  },
+  "codigo": "0915",
+  "nombre": "Torrassa",
+  "linea": {
+    "$oid": "6707812e6b3101669f72af43"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078ea26b3101669f72b244"
+  },
+  "codigo": "0916",
+  "nombre": "Collblanc",
+  "linea": {
+    "$oid": "6707812e6b3101669f72af43"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078eae6b3101669f72b247"
+  },
+  "codigo": "0917",
+  "nombre": "Zona Universitària",
+  "linea": {
+    "$oid": "6707812e6b3101669f72af43"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078f786b3101669f72b330"
+  },
+  "codigo": "0934",
+  "nombre": "Llefià",
+  "linea": {
+    "$oid": "670781476b3101669f72af46"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078f836b3101669f72b333"
+  },
+  "codigo": "0935",
+  "nombre": "La Salut",
+  "linea": {
+    "$oid": "670781476b3101669f72af46"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078f8d6b3101669f72b336"
+  },
+  "codigo": "0936",
+  "nombre": "Gorg",
+  "linea": {
+    "$oid": "670781476b3101669f72af46"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078fb36b3101669f72b339"
+  },
+  "codigo": "0951",
+  "nombre": "ZAL | Riu Vell",
+  "linea": {
+    "$oid": "6707814d6b3101669f72af49"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078fbe6b3101669f72b33c"
+  },
+  "codigo": "0952",
+  "nombre": "Ecoparc",
+  "linea": {
+    "$oid": "6707814d6b3101669f72af49"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078fcb6b3101669f72b33f"
+  },
+  "codigo": "0953",
+  "nombre": "Port Comercial | La Factoria",
+  "linea": {
+    "$oid": "6707814d6b3101669f72af49"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078fd66b3101669f72b342"
+  },
+  "codigo": "0954",
+  "nombre": "Zona Franca",
+  "linea": {
+    "$oid": "6707814d6b3101669f72af49"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078fe66b3101669f72b345"
+  },
+  "codigo": "0956",
+  "nombre": "Foc",
+  "linea": {
+    "$oid": "6707814d6b3101669f72af49"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67078ff36b3101669f72b348"
+  },
+  "codigo": "0957",
+  "nombre": "Foneria",
+  "linea": {
+    "$oid": "6707814d6b3101669f72af49"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670790026b3101669f72b34b"
+  },
+  "codigo": "0958",
+  "nombre": "Ciutat de la Justí­cia",
+  "linea": {
+    "$oid": "6707814d6b3101669f72af49"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707900c6b3101669f72b34e"
+  },
+  "codigo": "0959",
+  "nombre": "Provençana",
+  "linea": {
+    "$oid": "6707814d6b3101669f72af49"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707901e6b3101669f72b351"
+  },
+  "codigo": "0960",
+  "nombre": "Can Tries | Gornal",
+  "linea": {
+    "$oid": "6707814d6b3101669f72af49"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670790296b3101669f72b354"
+  },
+  "codigo": "0961",
+  "nombre": "Torrassa",
+  "linea": {
+    "$oid": "6707814d6b3101669f72af49"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670790316b3101669f72b357"
+  },
+  "codigo": "0962",
+  "nombre": "Collblanc",
+  "linea": {
+    "$oid": "6707814d6b3101669f72af49"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707906f6b3101669f72b376"
+  },
+  "codigo": "0989",
+  "nombre": "Paral·lel",
+  "linea": {
+    "$oid": "6707816f6b3101669f72af58"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707907a6b3101669f72b379"
+  },
+  "codigo": "0990",
+  "nombre": "Parc de Montjuïc",
+  "linea": {
+    "$oid": "6707816f6b3101669f72af58"
+  },
+  "__v": 0
+}]
