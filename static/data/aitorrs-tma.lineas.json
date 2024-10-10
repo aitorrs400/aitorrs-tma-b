@@ -1,0 +1,130 @@
+[{
+  "_id": {
+    "$oid": "670780806b3101669f72af19"
+  },
+  "nombre": "Línia L1",
+  "label": "L1",
+  "colorFondo": "#CB2508",
+  "colorTexto": "#FFFFFF",
+  "servicio": {
+    "$oid": "6707804b6b3101669f72af06"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670780ba6b3101669f72af28"
+  },
+  "nombre": "Línia L2",
+  "label": "L2",
+  "colorFondo": "#90278E",
+  "colorTexto": "#FFFFFF",
+  "servicio": {
+    "$oid": "6707804b6b3101669f72af06"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670780d66b3101669f72af37"
+  },
+  "nombre": "Línia L3",
+  "label": "L3",
+  "colorFondo": "#067634",
+  "colorTexto": "#FFFFFF",
+  "servicio": {
+    "$oid": "6707804b6b3101669f72af06"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670780f76b3101669f72af3a"
+  },
+  "nombre": "Línia L4",
+  "label": "L4",
+  "colorFondo": "#FFC10E",
+  "colorTexto": "#000000",
+  "servicio": {
+    "$oid": "6707804b6b3101669f72af06"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670781076b3101669f72af3d"
+  },
+  "nombre": "Línia L5",
+  "label": "L5",
+  "colorFondo": "#006B9D",
+  "colorTexto": "#FFFFFF",
+  "servicio": {
+    "$oid": "6707804b6b3101669f72af06"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670781266b3101669f72af40"
+  },
+  "nombre": "Línia L9 Nord",
+  "label": "L9N",
+  "colorFondo": "#DF8D33",
+  "colorTexto": "#FFFFFF",
+  "servicio": {
+    "$oid": "6707804b6b3101669f72af06"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707812e6b3101669f72af43"
+  },
+  "nombre": "Línia L9 Sud",
+  "label": "L9S",
+  "colorFondo": "#DF8D33",
+  "colorTexto": "#FFFFFF",
+  "servicio": {
+    "$oid": "6707804b6b3101669f72af06"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670781476b3101669f72af46"
+  },
+  "nombre": "Línia L10 Nord",
+  "label": "L10",
+  "colorFondo": "#31A8E0",
+  "colorTexto": "#FFFFFF",
+  "servicio": {
+    "$oid": "6707804b6b3101669f72af06"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707814d6b3101669f72af49"
+  },
+  "nombre": "Línia L10 Sud",
+  "label": "L10",
+  "colorFondo": "#31A8E0",
+  "colorTexto": "#FFFFFF",
+  "servicio": {
+    "$oid": "6707804b6b3101669f72af06"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6707816f6b3101669f72af58"
+  },
+  "nombre": "Línia FM",
+  "label": "FM",
+  "colorFondo": "#0C7557",
+  "colorTexto": "#FFFFFF",
+  "servicio": {
+    "$oid": "6707804b6b3101669f72af06"
+  },
+  "__v": 0
+}]

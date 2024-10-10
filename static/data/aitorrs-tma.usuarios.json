@@ -1,0 +1,10 @@
+[{
+  "_id": {
+    "$oid": "670503107cddd4d6b4ec32ef"
+  },
+  "nombre": "Administrador",
+  "correo": "admin@admin.com",
+  "contrasena": "$2a$12$ti6Xt7P.KQCUEYFOHVlZsusHnsoZ9VIvEmpIjLxpsr.9My3UPYWAi",
+  "img": "",
+  "estado": true
+}]
