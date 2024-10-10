@@ -60,11 +60,10 @@ export const lineaPost = async ( req = request, res = response ) => {
         servicio
     });
 
-    console.log(linea)
-    // Guardamos el servicio en la base de datos
+    // Guardamos la línea en la base de datos
     await linea.save();
 
-    // Devolvemos el servicio conforme se ha creado
+    // Devolvemos la línea conforme se ha creado
     return res.status(201).json( linea );
 
 }
